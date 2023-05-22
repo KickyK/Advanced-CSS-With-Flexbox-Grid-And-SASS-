@@ -1,0 +1,56 @@
+/* Let's make sure that the dimensions of any box includes its border and padding, this gives us an easy way of sizing our elements  */
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #07575B;
+}
+
+.container {
+    background-color: #07575B;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    
+}
+
+.container > div {
+    background-color: #66a5AD;
+    color: aliceblue;
+    text-align:  center;
+    padding: 20px;
+    margin:  1px;
+    border: 3px #C4DFE6 solid;
+ /*   flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 150px; 
+or all three propeties write as short  --> flex: 1 1 150px; 
+    /* flex: 1; 
+    flex: 0 1 auto; or flex: initial; and it wont grow 
+    flex: 1 1 auto; or flex: auto; and it both grow and shrink 
+    flex: 0 0 auto; or flex: none; and elements are going to stay sam all the time
+    you can use percentages or just numbers that are representing units as 1, 2, 3 to set the flex
+    */
+}
+
+#facebook {
+    font-size: 10px;
+   /* flex-grow: 1; */
+    flex: 3;
+}
+
+#apple {
+   /*  flex-shrink: 0;  */
+    flex: 2;
+}
+
+#amazon {
+   /* flex-grow: 1; */
+}
+
